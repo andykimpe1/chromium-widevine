@@ -32,6 +32,9 @@ sudo mkdir -p "$CHROMIUM_DIR/WidevineCdm/_platform_specific/linux_x64"
 sudo cp LICENSE "${CHROMIUM_DIR}/WidevineCdm/"
 sudo cp manifest.json "${CHROMIUM_DIR}/WidevineCdm/"
 sudo cp _platform_specific/linux_x64/libwidevinecdm.so "$CHROMIUM_DIR/WidevineCdm/_platform_specific/linux_x64/"
+rm -rf LICENSE
+rm -rf manifest.json
+rm -rf _platform_specific
 #unzip -p widevine.zip LICENSE.txt | sudo dd status=none of="${CHROMIUM_DIR}/WidevineCdm/LICENSE"
 #unzip -p widevine.zip manifest.json | sudo dd status=none of="${CHROMIUM_DIR}/WidevineCdm/manifest.json"
 #unzip -p widevine.zip libwidevinecdm.so | sudo dd status=none of="${CHROMIUM_DIR}/WidevineCdm/_platform_specific/linux_x64/libwidevinecdm.so"
